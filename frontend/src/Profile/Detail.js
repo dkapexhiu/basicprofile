@@ -21,14 +21,14 @@ const Detail = ({data, localUser, onFieldChange}) => (
     <label className={css(styles.left_grid)}>Tel</label>
     <div className={css(styles.right_grid)} >
       {localUser
-        ? <input name="text" value={data.tel} onChange={onFieldChange}/>
+        ? <input name="tel" value={data.tel} onChange={onFieldChange}/>
       : data.tel
       }
     </div>
     <label className={css(styles.left_grid)}>Date of Birth</label>
     <div className={css(styles.right_grid)} >
       {localUser
-        ? <input name="text" value={data.dateofbirth} onChange={onFieldChange}/>
+        ? <input name="dateofbirth" value={data.dateofbirth} onChange={onFieldChange}/>
       : data.dateofbirth
       }
     </div>
