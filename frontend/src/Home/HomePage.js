@@ -10,19 +10,19 @@ export default class HomePage extends React.Component {
           <div className={css(styles.content)}>
             <section className={css(styles.section)}>
               <h3 className={css(styles.h3)}>Basic Features</h3>
-              <p>Lorem Ipsum</p>
+              <p className={css(styles.p)}>Lorem Ipsum</p>
             </section>
             <section className={css(styles.section)}>
               <h3 className={css(styles.h3)}>Extra Features</h3>
-              <p>Lorem Ipsum</p>
+              <p className={css(styles.p)}>Lorem Ipsum</p>
             </section>
             <section className={css(styles.section)}>
               <h3 className={css(styles.h3)}>More Features</h3>
-              <p>Lorem Ipsum</p>
+              <p className={css(styles.p)}>Lorem Ipsum</p>
             </section>
             <section className={css(styles.section)}>
               <h3 className={css(styles.h3)}>Refer and earn</h3>
-              <p>Lorem Ipsum</p>
+              <p className={css(styles.p)}>Lorem Ipsum</p>
             </section>
           </div>
         </article>
@@ -36,12 +36,14 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     display: 'flex',
     flex: 1,
-    width: '100%'
+    width: '100%',
+    background: 'url(/bg.jpg)'
   },
   article: {
-    margin: '0 auto auto',
+    margin: 'auto',
     maxWidth: '60rem',
     padding: '3em 2rem',
+    background: 'bisque',
   },
   h2: {
     width: '100%',
@@ -53,11 +55,11 @@ const styles = StyleSheet.create({
   h3: {
     display: 'flex',
     alignItems: 'center',
-    color: '#7d93aa',
     fontSize: '1.4em',
     fontWeight: '400',
     marginBottom: '.75rem',
-    marginTop: '1rem'
+    marginTop: '1rem',
+    color: 'white'
   },
   section: {
     width: 'calc(50% - 1rem)',
@@ -68,5 +70,8 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     flexDirection: 'row',
     justifyContent: 'center',
+  },
+  p: {
+  	color: 'white',
   }
 });

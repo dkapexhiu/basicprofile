@@ -8,7 +8,6 @@ async function update( req, res) {
   user.name = name;
   user.email = email;
   user.tel = tel;
-  user.dateofbirth = dateofbirth;
   if (req.files.length) {
     const image_ids = await saveBlobs( req.files);
     user.avatar = image_ids[0];

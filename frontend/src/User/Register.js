@@ -15,7 +15,7 @@ class Register extends Component {
     confirmedPassword: "",
     currentStatus: "",
     tel: "",
-    dateofbirth: ""
+    dateofbirth: "",
   };
   componentWillReceiveProps = newProps => {
     let currentStatus = "";
@@ -35,9 +35,10 @@ class Register extends Component {
       password: this.state.password,
       "password-confirm": this.state.confirmedPassword,
       tel: this.state.tel,
-      dateofbirth: this.state.dateofbirth
+      dateofbirth: this.state.dateofbirth,
+      secquestion1: this.state.secquestion1
     });
-    this.setState({email: "", name: "", password: "", confirmedPassword: "", tel: "", dateofbirth: ""});
+    this.setState({email: "", name: "", password: "", confirmedPassword: "", tel: "", dateofbirth: "" });
   };
   render() {
     return (
