@@ -20,6 +20,7 @@ exports.validateRegister = (req, res, next) => {
   req.checkBody('password', 'Password Cannot be Blank!').notEmpty();
   req.checkBody('tel', 'You must supply a tel!').notEmpty();
   req.checkBody('dateofbirth', 'You must supply a date of birth!').notEmpty();
+  req.checkBody('sec1', 'You must type smth!').notEmpty();
   req.checkBody('password-confirm', 'Confirmed Password cannot be blank!').notEmpty();
   req.checkBody('password-confirm', 'Oops! Your passwords do not match').equals(req.body.password);
 
@@ -34,7 +35,7 @@ exports.validateRegister = (req, res, next) => {
 };
 
 exports.register = async (req, res, next) => {
-  const user = new User({ email: req.body.email, name: req.body.name, tel: req.body.tel, dateofbirth: req.body.dateofbirth });
+  const user = new User({ email: req.body.email, name: req.body.name, tel: req.body.tel, dateofbirth: req.body.dateofbirth, sec1: req.body.sec1 });
   const register = promisify(User.register, User);
   try {
     await register(user, req.body.password);

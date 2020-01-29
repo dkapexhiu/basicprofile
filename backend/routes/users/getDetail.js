@@ -11,7 +11,8 @@ async function getDetail( req, res) {
     avatar: user.avatar,
     email: user.email,
     tel: user.tel,
-    dateofbirth: user.dateofbirth
+    dateofbirth: user.dateofbirth,
+    sec1: user.sec1
   });
 }
 

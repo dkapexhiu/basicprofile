@@ -32,6 +32,13 @@ const Detail = ({data, localUser, onFieldChange}) => (
       : data.dateofbirth
       }
     </div>
+    <label className={css(styles.left_grid)}>Favourite Color</label>
+    <div className={css(styles.right_grid)} >
+      {localUser
+        ? <input name="sec1" value={data.sec1} onChange={onFieldChange}/>
+      : data.sec1
+      }
+    </div>
   </div>
 );
 

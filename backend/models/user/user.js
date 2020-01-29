@@ -41,7 +41,8 @@ const userSchema = new Schema({
     type: String,
     required: 'Please supply a date of birth',
     trim: true
-  }
+  },
+  sec1: String,
 });
 
 userSchema.plugin(passportLocalMongoose, { usernameField: 'email' });

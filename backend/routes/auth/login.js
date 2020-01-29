@@ -10,8 +10,8 @@ function login (req, res, next) {
     }
     req.logIn(user, function(err) {
       if (err) { return next(err); }
-      const {_id, name, email, avatar, tel, dateofbirth } = user;
-      res.send( {_id, name, email, avatar, tel, dateofbirth });
+      const {_id, name, email, avatar, tel, dateofbirth, sec1 } = user;
+      res.send( {_id, name, email, avatar, tel, dateofbirth, sec1 });
     });
   })(req, res, next);
 }
