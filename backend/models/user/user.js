@@ -31,7 +31,9 @@ const userSchema = new Schema({
     required: 'Please supply a name',
     trim: true
   },
-  avatar: String,
+  avatar: {
+    type: String,
+  },
   tel: {
     type: String,
     required: 'Please supply a tel',
@@ -42,7 +44,9 @@ const userSchema = new Schema({
     required: 'Please supply a date of birth',
     trim: true
   },
-  sec1: String,
+  sec1: {
+    type: String
+  },
 });
 
 userSchema.plugin(passportLocalMongoose, { usernameField: 'email' });
