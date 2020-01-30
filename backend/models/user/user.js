@@ -56,6 +56,10 @@ const userSchema = new Schema({
     type: String,
     required: 'Please supply an answer'
   },
+  address: {
+    type: String,
+    required: 'Please supply an address'
+  },
 });
 
 userSchema.plugin(passportLocalMongoose, { usernameField: 'email' });

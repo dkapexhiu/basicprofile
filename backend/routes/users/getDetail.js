@@ -14,7 +14,8 @@ async function getDetail( req, res) {
     dateofbirth: user.dateofbirth,
     sec1: user.sec1,
     sec2: user.sec2,
-    sec3: user.sec3
+    sec3: user.sec3,
+    address: user.address,
   });
 }
 

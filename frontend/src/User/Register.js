@@ -18,7 +18,8 @@ class Register extends Component {
     dateofbirth: "",
     sec1: "", 
     sec2: "",
-    sec3: ""
+    sec3: "", 
+    address: ""
   };
   componentWillReceiveProps = newProps => {
     let currentStatus = "";
@@ -41,9 +42,10 @@ class Register extends Component {
       dateofbirth: this.state.dateofbirth,
       sec1: this.state.sec1,
       sec2: this.state.sec2,
-      sec3: this.state.sec3
+      sec3: this.state.sec3,
+      address: this.state.address
     });
-    this.setState({email: "", name: "", password: "", confirmedPassword: "", tel: "", dateofbirth: "", sec1: "", sec2: "", sec3: "" });
+    this.setState({email: "", name: "", password: "", confirmedPassword: "", tel: "", dateofbirth: "", sec1: "", sec2: "", sec3: "", address: "" });
   };
   render() {
     return (
@@ -53,6 +55,7 @@ class Register extends Component {
           <input placeholder="your@example.com" className={css(styles.input)} onChange={e => this.setState({email: e.target.value})}></input>
           <input placeholder="+366 25 36 808" className={css(styles.input)} onChange={e => this.setState({tel: e.target.value})}></input>
           <input placeholder="20.10.2001" className={css(styles.input)} onChange={e => this.setState({dateofbirth: e.target.value})}></input>
+          <input placeholder="address" className={css(styles.input)} onChange={e => this.setState({address: e.target.value})}></input>
           <input placeholder="favorite color" className={css(styles.input)} onChange={e => this.setState({sec1: e.target.value})}></input>
           <input placeholder="favorite animal" className={css(styles.input)} onChange={e => this.setState({sec2: e.target.value})}></input>
           <input placeholder="favorite hobby" className={css(styles.input)} onChange={e => this.setState({sec3: e.target.value})}></input>

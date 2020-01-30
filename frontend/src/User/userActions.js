@@ -66,6 +66,7 @@ export function profileSave( user) {
     payload.append( 'sec1', user.sec1);
     payload.append( 'sec2', user.sec2);
     payload.append( 'sec3', user.sec3);
+    payload.append( 'address', user.address);
     if (user.avatar) {
       if ( typeof user.avatar === 'string') {
         payload.append( 'avatar', user.avatar);
