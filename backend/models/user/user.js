@@ -45,7 +45,16 @@ const userSchema = new Schema({
     trim: true
   },
   sec1: {
-    type: String
+    type: String,
+    required: 'Please supply an answer'
+  },
+  sec2: {
+    type: String,
+    required: 'Please supply an answer'
+  },
+  sec3: {
+    type: String,
+    required: 'Please supply an answer'
   },
 });
 

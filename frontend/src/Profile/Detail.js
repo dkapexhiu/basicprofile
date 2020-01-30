@@ -39,6 +39,20 @@ const Detail = ({data, localUser, onFieldChange}) => (
       : data.sec1
       }
     </div>
+    <label className={css(styles.left_grid)}>Favourite Animal</label>
+    <div className={css(styles.right_grid)} >
+      {localUser
+        ? <input name="sec2" value={data.sec2} onChange={onFieldChange}/>
+      : data.sec2
+      }
+    </div>
+    <label className={css(styles.left_grid)}>Favourite Hobby</label>
+    <div className={css(styles.right_grid)} >
+      {localUser
+        ? <input name="sec3" value={data.sec3} onChange={onFieldChange}/>
+      : data.sec3
+      }
+    </div>
   </div>
 );
 
