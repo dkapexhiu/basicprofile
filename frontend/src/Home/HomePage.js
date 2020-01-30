@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     margin: 'auto',
     maxWidth: '60rem',
     padding: '3em 2rem',
-    background: 'bisque',
+    background: 'blueviolet',
   },
   h2: {
     width: '100%',
