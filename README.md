@@ -40,7 +40,7 @@ npm run lint
 
 npm run test
 
-## production (e.g. for cloud9)
+## production
 1. clone repo
 2. rename .env.example file to .env and add mongodb_uri
 3. npm install (same as development above)
